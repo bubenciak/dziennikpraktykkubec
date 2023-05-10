@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="dziennik.css" />
+  <script src="dziennik.js"></script>
+</head>
+
+<body>
+  <fieldset id="all2">
+    <h1>Wprowadź nowe zajęcia</h1>
+    <fieldset id="informacje">
+      <legend>Informacje o zajęciach</legend>
+      Data odbycia praktyki:<label for=""><input type="date" name="date" id="date" /></label>
+      <br />
+      Wybierz dział:
+      <select name="dzial" id="dzial">
+        <optgroup label="Moduł wstępny">
+          <option value="Czynności wstępne i szkolenia, struktura i organizacja pracy
+          informatyków">
+            Czynności wstępne i szkolenia, struktura i organizacja pracy
+            informatyków
+          </option>
+          <option value="Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania informacji">
+            Struktura organizacyjna przedsiębiorstwa i elementy przetwarzania
+            informacji
+          </option>
+          <option value="Konfiguracja sprzętu komputerowego i oprogramowania">
+            Konfiguracja sprzętu komputerowego i oprogramowania
+          </option>
+        </optgroup>
+        <optgroup label="Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego">
+          Montaż, naprawa, konserwacja i obsługa sprzętu komputerowego
+          <option value="Montaż sprzętu komputerowego">
+            Montaż sprzętu komputerowego
+          </option>
+          <option value="Naprawa  sprzętu komputerowego">
+            Naprawa sprzętu komputerowego
+          </option>
+          <option value="Konserwacja i obsługa sprzętu komputerowego">
+            Konserwacja i obsługa sprzętu komputerowego
+          </option>
+        </optgroup>
+        <optgroup label="Systemy informatyczne">
+          Systemy informatyczne
+          <option value="Zasady administrowania systemami informatycznymi i archiwizowania danych">
+            Zasady administrowania systemami informatycznymi i archiwizowania
+            danych
+          </option>
+          <option value="Dokumentacja technologiczna przetwarzania informacj">
+            Dokumentacja technologiczna przetwarzania informacj
+          </option>
+          <option value="Biblioteki oprogramowania i zbiorów danych">
+            Biblioteki oprogramowania i zbiorów danych
+          </option>
+          <option value="Zapoznanie z programami do administracji lokalnymi sieciami komputerowymi">
+            Zapoznanie z programami do administracji lokalnymi sieciami
+            komputerowymi
+          </option>
+          <option value="Obsługa programów używanych w przedsiębiorstwie">
+            Obsługa programów używanych w przedsiębiorstwie
+          </option>
+          <option value="komputerowe wspomaganie procesów projektowania">
+            komputerowe wspomaganie procesów projektowania
+          </option>
+          <option value="Organizacja, zbieranie i kontrola danych, przetwarzanie i wykorzystywanie wyników">
+            Organizacja, zbieranie i kontrola danych, przetwarzanie i
+            wykorzystywanie wyników
+          </option>
+          <option value="Elementy procesów projektowania, programowania i uruchamiania programów komputerowych">
+            Elementy procesów projektowania, programowania i uruchamiania
+            programów komputerowych
+          </option>
+          <option value="Ochrona danych i procesów przetwarzania">
+            Ochrona danych i procesów przetwarzania
+          </option>
+        </optgroup>
+        <optgroup label="Tworzenie aplikacji internetowych">
+          Tworzenie aplikacji internetowych
+        </optgroup>
+        <option value="Konfiguracja serwerów i przeglądarek pod obsługę aplikacji internetowych">
+          Konfiguracja serwerów i przeglądarek pod obsługę aplikacji
+          internetowych
+        </option>
+        <option value="Struktura witryny internetowej - HTML">
+          Struktura witryny internetowej - HTML
+        </option>
+        <option value="Stylizacja elementów witryny - CSS">
+          Stylizacja elementów witryny - CSS
+        </option>
+        <option value="Programowanie aplikacji internetowych - JS, PHP">
+          Programowanie aplikacji internetowych - JS, PHP
+        </option>
+        <option value="Testowanie aplikacji internetowych">
+          Testowanie aplikacji internetowych
+        </option>
+      </select>
+
+      <fieldset id="opiekunowie">
+        <legend>Opiekun</legend>
+        <label for="opiekun" id="opiekun">
+          <p><input type="radio" name="opiekun" id="opiekun" value="Bartosz Dawid">Bartosz Dawid </p>
+          <p><input type="radio" name="opiekun" id="opiekun" value="Dawid Bartosz">Dawid Bartosz </p>
+          <p><input type="radio" name="opiekun" id="opiekun" value="Dawid Dawid">Dawid Dawid </p>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Realizacja materiału</legend>
+        <label for="sprawozdanie">Sprawozdanie <input type="text" id="sprawozdanie" /></label>
+        <label for="zrealizowano">Zrealizowano
+          <input type="checkbox" name="zrealizowano" id="zrealizowano" /></label>
+        <label for="godziny">Ile godzin: <input type="text" name="godziny" id="godziny" /></label>
+        <label for="ocena">Stopień opanowania materiału: 1
+          <input type="range" id="ocena" step="1" min="1" max="6" />6</label>
+      </fieldset>
+    </fieldset>
+    <div id="btn2"><button>Wyślij</button></div>
+    <div id="display2"></div>
+  </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <fieldset id="all">
+    <h1>Dziennik Praktyki Zawodowej</h1>
+
+    <fieldset id="metryczka">
+      <legend>Dane praktyki zawodowej</legend>
+      <label for="imie">
+        Podaj imie:
+        <input type="text" name="imie" id="imie" />
+      </label>
+      <label for="nazwisko">
+        Podaj Nazwisko:
+        <input type="text" name="nazwisko" id="nazwisko" /></label>
+
+      <label for="klasa">
+        Podaj Klasę:
+        <input type="text" name="klasa" id="klasa" />
+      </label>
+      <label for="rok">
+        Rok szkolny:
+        <input type="text" name="rok" id="rok" /></label>
+
+      <label for="firma">
+        Odbytej w:
+        <input type="text" name="firma" id="firma" />
+      </label>
+
+      <fieldset id="czas">
+        <legend>Czas trwania praktyki:</legend>
+        <label for="start">Termin rozpoczęcia praktyk:<input type="date" id="start" /></label>
+        <label for="stop">Termin zakończenia praktyk:
+          <input type="date" id="stop" />
+        </label>
+      </fieldset>
+      <div id="btn"><button>Zatwierdź</button></div>
+    </fieldset>
+    <div class="przyciski">
+      <button id="metryczkaBtn">
+        <a href="dziennik.html">Metryczka</a>
+      </button>
+      <button id="dziennikBtn">
+        <a href="wynik.html">Dziennik</a>
+      </button>
+    </div>
+  </fieldset>
+
+  <div id="display"></div>
+</body>
+
+</html>
